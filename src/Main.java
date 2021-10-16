@@ -1,16 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        int currentbalance = 100;
-        int putmoney = 1200;
+        int currentBalance = 100;
+        int putMoney = 1210;
         int bonus = 0;
-        int finalescore;
-        if (putmoney > 1000 && currentbalance == 100) {
-            bonus = putmoney / currentbalance;
-            finalescore = currentbalance + putmoney + bonus;
-            System.out.println(finalescore);
+        int saveSum = 100;
+        int finaleScore;
+        if (putMoney > 1000 && currentBalance >= 100) {
+            bonus = putMoney / saveSum;
+            finaleScore = currentBalance + putMoney + bonus;
+            System.out.println(finaleScore);
         } else {
-            finalescore = currentbalance + putmoney;
-            System.out.println(finalescore);
+            finaleScore = currentBalance + putMoney;
+            System.out.println(finaleScore);
         }
     }
 }
