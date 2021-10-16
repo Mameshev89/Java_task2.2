@@ -5,13 +5,12 @@ public class Main {
         int bonus = 0;
         int saveSum = 100;
         int finaleScore;
-        if (putMoney > 1000 && currentBalance >= 100) {
+        if (putMoney > 1000) {
             bonus = putMoney / saveSum;
             finaleScore = currentBalance + putMoney + bonus;
-            System.out.println(finaleScore);
         } else {
             finaleScore = currentBalance + putMoney;
-            System.out.println(finaleScore);
         }
+        System.out.println(finaleScore);
     }
 }
